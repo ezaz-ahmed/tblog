@@ -1,0 +1,30 @@
+<label for="Toggle4" class="inline-flex items-center p-1 cursor-pointer dark:bg-gray-300 dark:text-gray-800">
+	<input id="Toggle4" type="checkbox" class="hidden peer">
+	<span class="px-4 py-2 dark:bg-gray-600 peer-checked:dark:bg-gray-300">OFF</span>
+	<span class="px-4 py-2 dark:bg-gray-300 peer-checked:dark:bg-violet-400">ON</span>
+</label>
+
+<script>
+  function toggleTheme() {
+    if (localStorage.theme = "light") {
+      localStorage.theme = "light";
+      document.documentElement.classList.add("light");
+    document.documentElement.classList.remove("dark");
+    }
+  }
+
+  function light() {
+    // Whenever the user explicitly chooses light mode
+    localStorage.theme = "light";
+    document.documentElement.classList.add("light");
+    document.documentElement.classList.remove("dark");
+  }
+  function dark() {
+    // Whenever the user explicitly chooses dark mode
+    localStorage.theme = "dark";
+    document.documentElement.classList.add("dark");
+    document.documentElement.classList.remove("light");
+  }
+  document.getElementById("light")!.addEventListener("click", light);
+  document.getElementById("dark")!.addEventListener("click", dark); 
+</script>
