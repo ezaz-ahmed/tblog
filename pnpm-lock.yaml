@@ -23,6 +23,9 @@ dependencies:
   astro:
     specifier: ^2.10.12
     version: 2.10.12
+  rough-notation:
+    specifier: ^0.5.1
+    version: 0.5.1
   svelte:
     specifier: ^4.2.0
     version: 4.2.0
@@ -3568,6 +3571,10 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+    dev: false
+
+  /rough-notation@0.5.1:
+    resolution: {integrity: sha512-ITHofTzm13cWFVfoGsh/4c/k2Mg8geKgBCwex71UZLnNuw403tCRjYPQ68jSAd37DMbZIePXPjDgY0XdZi9HPw==}
     dev: false
 
   /run-applescript@5.0.0:
